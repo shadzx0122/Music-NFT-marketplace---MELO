@@ -1,0 +1,81 @@
+.terminal-container {
+  background-color: #000; 
+  color: #fff; 
+  font-family: 'Fira Mono', monospace; 
+  padding: 50px 20px 20px 20px; 
+  border-radius: 5px;
+  animation: terminal-appear 1s ease-in-out forwards;
+  min-height: 558px;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes terminal-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.transaction-list,
+.block-data {
+  padding: 0px 20px 20px 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transaction {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0 20px 0;
+  margin-bottom: 5px;
+  animation-delay: 0.2s; 
+  font-size: 0.9rem; 
+  line-height: 1.5; 
+}
+.block-data {
+  padding: 20px 0 20px 0;
+}
+
+.block-data p {
+  margin-bottom: 5px;
+  animation-delay: 0.2s; 
+  font-size: 0.9rem; 
+  line-height: 1.5; 
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  animation: title-appear 0.5s ease-in-out forwards;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+@keyframes title-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.no-wallet-message {
+  color: #ccc;
+  padding-top: 150px; 
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}

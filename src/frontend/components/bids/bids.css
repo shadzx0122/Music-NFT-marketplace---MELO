@@ -1,0 +1,287 @@
+
+.bids-container{
+  margin: 0px 50px 0px 40px;
+  width: 90%;
+}
+
+.bids-container-text h1{
+  font-family: var(--font-family);  
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.bids-container-card{
+  margin: 0 -5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.bids-container-card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card-column{
+  float: left;
+  width: 20%;
+}
+.bids-card{
+  background: #2A2D3A;
+  border-radius: 20px;
+  padding: 11px 12px 19px 11px;
+  margin-inline: 10px;
+  margin-bottom: 20px;
+}
+.bids-card img{
+  border-radius: 20px;
+  width: 100%;
+}
+.bids-card-top p{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-top: 15px;
+  
+}
+.bids-card-bottom{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.bids-card-bottom p{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin : 3px 3px;
+}
+.bids-card-bottom p:last-child{
+font-weight: normal;
+
+}
+.bids-card-bottom span{
+font-weight: normal;
+}
+
+.load-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.load-more button{
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  margin: 0 1rem;
+  color: var(--primary-color);
+  border-radius: 10px;
+  padding: 10px 100px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media screen and (max-width: 1440px) {
+  .card-column {
+    width: 25%;
+    
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .card-column {
+    width: 33.33%;
+    
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-column {
+    width: 50%;
+    
+  }
+}
+@media screen and (max-width: 550px) {
+  .section__padding{
+    padding: 2rem 14px !important;
+  }
+  .bids-card{
+    margin-bottom: 10px;
+    margin-inline: 5px;
+  }
+  .bids-card-top p{
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+  .bids-card-bottom p{
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .bids-container{
+    width: 100%;
+  }
+
+ 
+}
+
+:root {
+  --loading-grey: #888888;
+}
+.card {
+  width: 220px; 
+  height: 280px; 
+  background-color: #a5a5a5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, .12);
+}
+
+.image {
+  height: 120px;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  
+}
+
+.content {
+  padding: 2rem 1.8rem;
+}
+
+h4 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.loading .image,
+.loading h4,
+.loading .description {
+  background-color: var(--loading-grey);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, .5) 50%,
+    rgba(255, 255, 255, 0) 60%
+  ) var(--loading-grey);
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  animation: 1s loading ease-in-out infinite;
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}
+
+.loading h4 {
+  min-height: 1.6rem;
+  border-radius: 4px;
+  animation-delay: .05s;
+}
+
+.loading .description {
+  min-height: 4rem;
+  border-radius: 4px;
+  animation-delay: .06s;
+}
+
+.loadcol{
+  float: left;
+  width: 24%;
+  margin: 10px 2.5px;
+  padding-left: 20px;
+}
+
+.loadcard{
+  margin: 0 -5px;
+  width: 1000px;
+  display: table;
+  align-items: center;
+
+}
+
+.centered-bold {
+  margin: 150px 40px 150px 50px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Manjari",monospace;
+  font-size: 22px;
+  letter-spacing: 8px;
+  color: #dfdfdf;
+}
+
+.my-1 { 
+  margin: 8px 0px; 
+}
+
+.resell_form {
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 4px; 
+  padding: 5px 8px; 
+  background-color: transparent; 
+  color: #FFFFFF; 
+  width : 65%;
+
+}
+
+.resell_form:focus {
+  outline: none; 
+  border-color: #FFFFFF; 
+}
+
+.resell_butt{
+  margin-left: 10px;
+  background-color: #d21ab3; 
+  border: none;
+  border-radius: 4px; 
+  padding: 5px 10px; 
+  color: #FFFFFF; 
+  font-weight: 400; 
+  cursor: pointer; 
+}
+
+.resell_butt:hover {
+  background-color: #b81a9e; 
+}
+
+.like {
+  cursor: pointer; 
+  padding-right: 3px;
+  padding-bottom: 3px;
+}
+
+.play {
+  margin: 0 83px 0 82px; 
+  height : 24px; 
+}
+
+#style {
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+

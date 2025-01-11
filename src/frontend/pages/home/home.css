@@ -1,0 +1,41 @@
+.load {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .loader {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: inline-block; 
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-bottom: 20px; 
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .text {
+    font-family: "Manjari", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 8px;
+    color: #dfdfdf;
+    text-align: center; 
+  }
+  
